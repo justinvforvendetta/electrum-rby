@@ -1,0 +1,18 @@
+# Configuration file for the electrum client
+# Settings defined here are shared across wallets
+#
+# copy this file to /etc/electrum-rby.conf if you want read-only settings
+# copy it into your ~/.electrum-rby/ directory if you want global settings
+# that can be rewritten by the client
+
+[client]
+server = rby-cce-1.coinomi.net:5018:t
+proxy = None
+gap_limit = 5
+# booleans use python syntax
+use_change = True
+gui = qt
+num_zeros = 8
+# default transaction fee is in Satoshis
+fee = 1000
+winpos-qt = [799, 226, 877, 435]

@@ -1,0 +1,15 @@
+include README LICENCE RELEASE-NOTES AUTHORS
+include electrum-rby.conf.sample
+include electrum-rby.desktop
+include *.py
+include electrum-rby
+recursive-include lib *.py
+recursive-include gui *.py
+recursive-include plugins *.py
+recursive-include packages *.py
+recursive-include packages cacert.pem
+include app.fil
+include icons.qrc
+recursive-include icons *
+recursive-include scripts *
+recursive-include docs *
