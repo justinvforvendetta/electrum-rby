@@ -1,6 +1,6 @@
 Electrum-RBY - lightweight rubycoin client
 ------------------------------------------------
-![Electrum-RBY](https://raw.githubusercontent.com/rubycoin/electrum-rby/master/electrumlogo.png)
+![Electrum-RBY](http://i.imgur.com/SNByetj.png)
 
 Licence: GNU GPL v3
 
