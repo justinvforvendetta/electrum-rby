@@ -14,5 +14,5 @@ use_change = True
 gui = qt
 num_zeros = 8
 # default transaction fee is in Satoshis
-fee = 1000
+fee = 10000
 winpos-qt = [799, 226, 877, 435]
