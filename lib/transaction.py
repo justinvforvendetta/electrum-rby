@@ -394,7 +394,7 @@ def parse_scriptSig(d, bytes):
     d['pubkeys'] = pubkeys
     redeemScript = Transaction.multisig_script(pubkeys,2)
     d['redeemScript'] = redeemScript
-    d['address'] = hash_160_to_bc_address(hash_160(redeemScript.decode('hex')), 5)
+    d['address'] = hash_160_to_bc_address(hash_160(redeemScript.decode('hex')), 85)
 
 
 
@@ -417,7 +417,7 @@ def get_address_from_output_script(bytes):
     # p2sh
     match = [ opcodes.OP_HASH160, opcodes.OP_PUSHDATA4, opcodes.OP_EQUAL ]
     if match_decoded(decoded, match):
-        return 'address', hash_160_to_bc_address(decoded[1][1],5)
+        return 'address', hash_160_to_bc_address(decoded[1][1],85)
 
     return 'script', bytes
 
