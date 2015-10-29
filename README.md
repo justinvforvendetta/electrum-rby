@@ -13,23 +13,20 @@ Homepage: http://rubycoin.org/
 
 1.a) GETTING STARTED WITH UBUNTU/LINUX
 ------------------
-sudo apt-get install git pyqt4-dev-tools python-pip python-dev python-slowaes
+sudo apt-get install git pyqt4-dev-tools python-pip python-dev python-slowaes (installs needed packages)
 
-sudo pip install pyasn1 pyasn1-modules pbkdf2 tlslite qrcode
+git clone https://github.com/rubycoin/electrum-rby && cd electrum-rby (clones this github repository)
 
-git clone https://github.com/rubycoin/electrum-rby && cd electrum-rby
+pyrcc4 icons.qrc -o gui/qt/icons_rc.py (creates icons)
 
-pyrcc4 icons.qrc -o gui/qt/icons_rc.py
+cp electrum-rby.conf.sample electrum-rby.conf (this is your configuration file)
 
 sudo python setup.py install
 
 To run Electrum from this directory, just do:
 ---------------------------------------------
   ./electrum-rby
-
-To start Electrum from your web browser, see
---------------------------------------------
-http://electrum-rby.net/rubycoin_URIs.html
+  
 
 To update your copy of the electrum client:
 -------------------------------------------
@@ -87,4 +84,4 @@ On Mac OS X:
   sudo hdiutil create -fs HFS+ -volname "Electrum-RBY" -srcfolder dist/Electrum-RBY.app dist/electrum-rby-VERSION-macosx.dmg
 
 
-[![Visit our IRC Chat!](https://kiwiirc.com/buttons/irc.freenode.net/rubycoin.png)](https://kiwiirc.com/client/irc.freenode.net/?nick=rby|?&theme=cli#electrum-rby)
+[![Visit our IRC Chat!](https://kiwiirc.com/buttons/irc.freenode.net/rubycoin.png)](https://kiwiirc.com/client/irc.freenode.net/?nick=rby|?&theme=cli#rubycoin)
