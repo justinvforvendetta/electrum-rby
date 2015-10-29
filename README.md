@@ -19,7 +19,7 @@ git clone https://github.com/rubycoin/electrum-rby && cd electrum-rby (clones th
 
 pyrcc4 icons.qrc -o gui/qt/icons_rc.py (creates icons)
 
-cp electrum-rby.conf.sample electrum-rby.conf (this is your configuration file)
+sudo cp electrum-rby.conf.sample etc/electrum-rby.conf (this is your configuration file)
 
 sudo python setup.py install
 
