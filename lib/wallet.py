@@ -832,7 +832,7 @@ class Abstract_Wallet(object):
 
     def estimated_fee(self, tx):
         estimated_size = len(tx.serialize(-1))/2
-        fee = int(self.fee_per_kb*estimated_size/1000.)
+        fee = int(self.fee_per_kb*estimated_size/10000.)
         if fee < MIN_RELAY_TX_FEE: # tx.required_fee(self):
             fee = MIN_RELAY_TX_FEE
         if fee < tx.required_fee(self): # check fee meets the required fee
